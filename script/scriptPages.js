@@ -17,7 +17,7 @@ item3.setAttribute("href", "./certificate.html");
 let item4 = document.createElement("a");
 item4.setAttribute("href", "./assets/pages/unidades.html");
 let item5 = document.createElement("a");
-item5.setAttribute("href", "./assets/pages/contatos.html");
+item5.setAttribute("href", "./partners.html");
 let item6 = document.createElement("a");
 item6.setAttribute("href", "./teacher.html");
 let item7 = document.createElement("a");

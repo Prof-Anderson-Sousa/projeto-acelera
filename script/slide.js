@@ -23,23 +23,26 @@ let indiceAtual = 0;
 
 // Função para trocar a imagem, o texto e os ajustes individuais
 function trocarImagem() {
-    indiceAtual = (indiceAtual + 1) % imagens.length; // Alterna entre as imagens
-
     // Aplica o efeito correto de fundo e os ajustes individuais
     document.querySelector('.hero').style.background = 
         `linear-gradient(to right, rgba(0, 31, 76, 0.8), rgba(0, 86, 166, 0.6) 30%, rgba(0, 86, 166, 0) 100%), 
         url('${imagens[indiceAtual].url}') no-repeat center center`;
     document.querySelector('.hero').style.backgroundSize = "cover";
-    // document.querySelector('.hero').style.backgroundAttachment = "fixed";
     document.querySelector('.hero').style.backgroundPosition = imagens[indiceAtual].posicao;
 
     // Atualiza os textos
     document.querySelector('.hero h1').innerHTML = imagens[indiceAtual].titulo;
     document.querySelector('.btn-action').innerHTML = imagens[indiceAtual].botao;
+
+    // Avança o índice para a próxima troca
+    indiceAtual = (indiceAtual + 1) % imagens.length;
 }
 
-// Troca automática a cada 3 segundos
-setInterval(trocarImagem, 3000);
+// Aplica a primeira imagem imediatamente
+trocarImagem();
+
+// Troca automática a cada 5 segundos
+setInterval(trocarImagem, 5000);
 
 // Botão para trocar a imagem manualmente
 document.querySelector('.btn-change-image').addEventListener('click', trocarImagem);
