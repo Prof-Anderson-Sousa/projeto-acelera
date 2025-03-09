@@ -75,10 +75,10 @@ section {
     padding: 50px;
     color: white;
     background: linear-gradient(to right, rgba(0, 31, 76, 0.8), rgba(0, 86, 166, 0.6) 30%, rgba(0, 86, 166, 0) 100%),
-                url('../images/capa1.jpg') no-repeat center center;
+                url('../images/capa2.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center top -200px;
+    background-attachment: local;
+    /* background-position: center top -100px; */
     height: 500px;
     width: 100%;
     border-bottom: solid 12px yellow;

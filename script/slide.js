@@ -1,18 +1,18 @@
 const imagens = [
     { 
-        url: "./images/capa1.jpg", 
+        url: "/images/capa1.jpg", 
         titulo: "ACELERAMOS A QUALIDADE DA EDUCAÇÃO PÚBLICA", 
         botao: "COMEMORE COM A GENTE",
-        posicao: "center top -200px"
+        posicao: "center center"
     },
     { 
-        url: "./images/capa2.jpg", 
+        url: "/images/capa2.jpg", 
         titulo: "O FUTURO COMEÇA AGORA: VOLTA ÀS AULAS 2025!", 
         botao: "SAIBA MAIS",
-        posicao: "center top -150px"
+        posicao: "center center"
     },
     { 
-        url: "./images/capa.jpg", 
+        url: "/images/capa.jpg", 
         titulo: "SEJA UM PARTICIPANTE DO NOSSO PROJETO", 
         botao: "APOIE ESSA CAUSA",
         posicao: "center center"
@@ -30,7 +30,7 @@ function trocarImagem() {
         `linear-gradient(to right, rgba(0, 31, 76, 0.8), rgba(0, 86, 166, 0.6) 30%, rgba(0, 86, 166, 0) 100%), 
         url('${imagens[indiceAtual].url}') no-repeat center center`;
     document.querySelector('.hero').style.backgroundSize = "cover";
-    document.querySelector('.hero').style.backgroundAttachment = "fixed";
+    // document.querySelector('.hero').style.backgroundAttachment = "fixed";
     document.querySelector('.hero').style.backgroundPosition = imagens[indiceAtual].posicao;
 
     // Atualiza os textos
