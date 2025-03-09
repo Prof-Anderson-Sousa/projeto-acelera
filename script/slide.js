@@ -1,18 +1,18 @@
 const imagens = [
     { 
-        url: "/images/capa1.jpg", 
+        url: "./images/capa1.jpg", 
         titulo: "ACELERAMOS A QUALIDADE DA EDUCAÇÃO PÚBLICA", 
         botao: "COMEMORE COM A GENTE",
         posicao: "center center"
     },
     { 
-        url: "/images/capa2.jpg", 
+        url: "./images/capa2.jpg", 
         titulo: "O FUTURO COMEÇA AGORA: VOLTA ÀS AULAS 2025!", 
         botao: "SAIBA MAIS",
         posicao: "center center"
     },
     { 
-        url: "/images/capa.jpg", 
+        url: "./images/capa.jpg", 
         titulo: "SEJA UM PARTICIPANTE DO NOSSO PROJETO", 
         botao: "APOIE ESSA CAUSA",
         posicao: "center center"
