@@ -19,7 +19,7 @@ item4.setAttribute("href", "./assets/pages/unidades.html");
 let item5 = document.createElement("a");
 item5.setAttribute("href", "./assets/pages/contatos.html");
 let item6 = document.createElement("a");
-item6.setAttribute("href", "../pages/teacher.html");
+item6.setAttribute("href", "./pages/teacher.html");
 let item7 = document.createElement("a");
 item7.setAttribute("href", "https://api.whatsapp.com/send/?phone=5581996276609&text=Ol%C3%A1%2C+Desejo+me+Matricular%21&type=phone_number&app_absent=0");
 
@@ -58,7 +58,7 @@ sublista.appendChild(subItem2);
 let containerLogo = document.createElement("figure");
 let imgLogo = document.createElement("img");
 imgLogo.classList.add("logo-neo");
-imgLogo.setAttribute("src", "./images/nike-11.svg");
+imgLogo.setAttribute("src", "./images/logo.png");
 containerLogo.appendChild(imgLogo);
 
 /* Selecionando Botão de Fechar Menu */

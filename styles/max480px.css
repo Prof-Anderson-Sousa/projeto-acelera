@@ -12,9 +12,19 @@
     }
 
     .hero {
-        background: linear-gradient(to right, rgba(0, 31, 76, 0.8), rgba(0, 86, 166, 0.6) 30%, rgba(0, 86, 166, 0) 100%),
-                    url('../images/capa.jpg');
+        text-align: left;
     }
+
+    #hero-title {
+      font-size: 2em;
+      text-align: left;
+      margin-left: -30px;
+      margin-top: 60px;
+  }
+
+  #btn-action {
+    margin-left: -30px;
+  }
 
     .card {
         width: 360px;
