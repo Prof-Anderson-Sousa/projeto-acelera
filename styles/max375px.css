@@ -1,0 +1,13 @@
+@media screen and (max-width: 375px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .menu-burguer {
+        margin-right: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+}
