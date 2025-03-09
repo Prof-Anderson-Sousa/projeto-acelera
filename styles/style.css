@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+}
+h1, h2, p, a, button, em, strong {
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 999;
+    position: relative;
+}
+.logo img {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #00305e;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.btn-doe {
+    background-color: #008CFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: solid 2px transparent;
+}
+.btn-doe:hover {
+    background-color: transparent;
+    color: #008CFF;
+    cursor: pointer;
+    border: solid 2px #008CFF;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+main {
+    margin-top: -20px;
+    z-index: 998;
+    position: relative;
+    
+}
+section {
+    margin-top: -20px;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background: linear-gradient(to right, rgba(0, 31, 76, 0.8), rgba(0, 86, 166, 0.6) 30%, rgba(0, 86, 166, 0) 100%),
+                url('../images/capa1.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top -200px;
+    height: 500px;
+    width: 100%;
+    border-bottom: solid 12px yellow;
+    position: relative;
+}
+
+.hero .content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+.btn-action {
+    background-color: #008CFF;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border: solid 2px transparent;
+    border-radius: 20px;
+}
+
+.btn-action:hover {
+    background-color: #fff;
+    color: #008CFF;
+    border: solid 2px #008CFF;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+/* Botão de mudança de imagem com seta */
+.btn-change-image {
+    position: absolute;
+    bottom: 0px; /* Agora está no canto inferior */
+    right: 0px; /* Agora está no canto direito */
+    background-color: #008CFF;
+    color: white;
+    font-size: 30px; /* Deixa a seta mais espessa */
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-top-left-radius: 30px; /* Apenas o canto superior esquerdo arredondado */
+    /* border-radius: 10px; Mantém os outros cantos sem arredondamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Define como quadrado */
+    height: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-change-image:hover {
+    background-color: #fff;
+    color: #008CFF;
+}
+
+/* Aumentando a espessura da seta */
+.btn-change-image::before {
+    font-size: 100px; /* Tamanho maior para destacar a seta */
+    font-weight: bold;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px 100px;
+    }
+}

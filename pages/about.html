@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Que Fazemos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/events.css">
+    <link rel="stylesheet" href="../styles/max1024px.css">
+    <link rel="stylesheet" href="../styles/max480px.css">
+    <link rel="stylesheet" href="../styles/menu_responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .text {
+            text-align: justify;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .title-text {
+            text-align: center;
+            margin: 25px 0px;
+        }
+
+         .video {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 25px 0;
+         }
+
+         #meuvideo {
+            width: 80%;
+         }
+
+         .info {
+            margin-top: 5px;
+            font-size: 12px;
+         }
+    </style>
+        <style>
+            /* Estiliza o item principal do dropdown */
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      
+      /* Esconde o menu por padrão */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          list-style: none;
+          padding: 10px 0px;
+          margin: 0;
+          top: 100%;
+          left: 0;
+          min-width: 200px;
+          border-radius: 5px;
+      }
+      
+      /* Estilo dos itens do menu */
+      .dropdown-menu li {
+          padding: 10px 15px;
+      }
+      
+      /* Muda a cor ao passar o mouse */
+      .dropdown-menu li a {
+          text-decoration: none;
+          color: #003366;
+          display: block;
+      }
+      
+      .dropdown-menu li:hover {
+          background-color: #f1f1f1;
+      }
+      
+      /* Exibe o menu quando passa o mouse */
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+          </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="../images/logo.png" alt="Logo Instituto Ayrton Senna" width="100px"> </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li class="dropdown">
+                    <a href="#">SOBRE NÓS <i class="fas fa-plus" style="color: red;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">QUEM SOMOS</a></li>
+                        <li><a href="about.html">O QUE FAZEMOS</a></li>
+                    </ul>
+                </li>
+                <li><a href="certificate.html">CERTIFICADOS</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="#">PARCEIROS</a></li>
+                <li><a href="teacher.html">PARA PROFESSORES</a></li>
+                <li><a href="#" class="btn-doe">QUERO APOIAR</a></li>
+            </ul>
+        </nav>
+        <img class="menu-burguer" src="../images/menu-icon.svg" width="40px">   
+    </header>
+
+    <section class="text">
+        <h1 class="title-text">Evasão Escolar</h1>
+        <p>O Projeto <strong>ACELERA JUVENTUDE</strong> <em>tem como principal objetivo diminuir a distância entre a evasão escolar dos alunos das redes municipais e estaduais de ensino.</em>
+    
+        Evasão escolar é o ato de deixar de frequentar as aulas, ou seja, abandonar o ensino em decorrência de qualquer motivo.
+    
+        Esse problema social que, infelizmente, é comum no Brasil, afeta principalmente os alunos do Ensino Médio.
+    
+        O Censo Escolar é o principal retrato da educação básica, formada por três etapas: educação infantil, ensino fundamental e ensino médio. O Censo reúne dados das escolas, professores e alunos nas redes pública e privada. É nesse levantamento que os problemas aparecem e as políticas públicas devem começar a agir.</p>
+    </section>
+    
+
+    <div class="video">
+      <video id="meuvideo" controls controlsList="nodownload">
+        <source src="../video/evasao escolar.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+  
+      <p class="info"><strong>Por Jornal Nacional - </strong>22/02/2024 21h01 - Atualizado há um ano</p>
+    </div>
+</body>
+</html>

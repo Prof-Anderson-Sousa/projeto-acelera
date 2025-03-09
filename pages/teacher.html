@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="../styles/max480px.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/events.css">
+    <link rel="stylesheet" href="../styles/max1024px.css">
+    <link rel="stylesheet" href="../styles/menu_responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .text {
+            text-align: justify;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .title-text {
+            text-align: center;
+            margin: 25px 0px;
+        }
+
+         .alunos {
+            display: flex;
+            justify-content: center;
+            /* width: 80%; */
+            margin-bottom: 30px;
+         }
+
+         .alunos > img {
+            width: 80%;
+         }
+    </style>
+
+<style>
+    /* Estiliza o item principal do dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Esconde o menu por padrão */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0px;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+/* Estilo dos itens do menu */
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+/* Muda a cor ao passar o mouse */
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #003366;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Exibe o menu quando passa o mouse */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+  </style>
+
+  <style>
+    .formulario  .titulo { 
+  color: #757575;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.formulario {
+   
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  overflow: hidden;
+  padding: 20px;
+}
+:focus{outline: none;}
+.label { 
+  float: left; 
+  width: 100%; 
+  margin-bottom: 25px; 
+  position: relative;
+}
+.input-bordas{
+  
+  font: 15px/24px "Lato", Arial, sans-serif; 
+  color: #333; 
+  width: 100%; 
+  box-sizing: border-box; 
+  letter-spacing: 1px;
+  border: 1px solid #ccc; 
+  padding: 7px 14px 9px; 
+  transition: 0.4s;
+}
+.textarea { resize:none!important; }
+.input-bordas ~ .focus-border:before,
+.input-bordas ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
+.input-bordas ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+.input-bordas ~ .focus-border i:before,
+.input-bordas ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
+.input-bordas ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+.input-bordas:focus ~ .focus-border:before,
+.input-bordas:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+.input-bordas:focus ~ .focus-border:after{transition-delay: 0.2s;}
+.input-bordas:focus ~ .focus-border i:before,
+.input-bordas:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+.input-bordas:focus ~ .focus-border i:after{transition-delay: 0.4s;}
+.button-form { 
+  background-color: #39f;
+  padding: 0.5em 1.3em;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+}
+.borda-inversa {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  box-shadow: inset 0 0 0 2px #39f, 0 0 1px rgba(0, 0, 0, 0);
+}
+.borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+  
+  background: none;
+  color:#39f; 
+}
+/*Anti-span*/
+.naoexibir { display:none; }
+
+.container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .conteudo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .formulario {
+            flex: 1;
+            min-width: 300px;
+        }
+        .imagem {
+          display: flex;
+          justify-content: center;
+            flex: 1;
+            min-width: 400px;
+        }
+        .imagem img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 600px) {
+            .conteudo {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin: 30px 0px;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="../images/logo.png" alt="Logo Instituto Ayrton Senna" width="100px"> </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li class="dropdown">
+                    <a href="#">SOBRE NÓS <i class="fas fa-plus" style="color: red;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">QUEM SOMOS</a></li>
+                        <li><a href="about.html">O QUE FAZEMOS</a></li>
+                    </ul>
+                  </li>
+                <li><a href="certificate.html">CERTIFICADOS</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="#">PARCEIROS</a></li>
+                <li><a href="#">PARA PROFESSORES</a></li>
+                <li><a href="#" class="btn-doe">QUERO APOIAR</a></li>
+            </ul>
+        </nav>
+        <img class="menu-burguer" src="../images/menu-icon.svg" width="40px">   
+    </header>
+
+    <div class="header">
+        <h1>O MELHOR PARA VOCÊ PROFESSOR</h1>
+        <p class="text">Com o apoio de professores, desenvolvemos um projeto para fortalecer suas competências socioemocionais,
+           reconhecendo sua importância na prática docente e no desenvolvimento dos estudantes. O projeto inclui uma 
+           jornada de desenvolvimento online gratuita, focada em competências como autorregulação emocional, conexão 
+           com o outro, e inventividade.</p>
+    </div>
+    
+    <div class="container">
+        <div class="conteudo">
+            <div class="formulario">
+                <form class="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzU-LpJexVSmX5Hpw751Zcagqjnz8vy7e3M3xA3mFOAtntG_vnnS5gY44dvwiuWAG_AoQ/exec" name="contact-form" id="scholarship-form">
+                    <h2 class="titulo">Formulário de Contato</h2>
+                    <label class="label">
+                        <input type="text" name="your-name" id="nome" class="input-bordas" placeholder="Nome do Professor" required="">
+                        <span class="focus-border"> <i></i> </span>
+                    </label>
+                    <label class="label">
+                        <input type="text" name="your-school" id="school" class="input-bordas" placeholder="Escola em que atua" required="">
+                        <span class="focus-border"> <i></i> </span>
+                    </label>
+                    <label class="label">
+                        <input type="email" name="email" id="email" class="input-bordas" placeholder="E-mail" required="">
+                        <span class="focus-border"> <i></i> </span>
+                    </label>
+                    <label class="label">
+                        <input type="tel" name="tel" id="whatsapp" class="input-bordas" placeholder="Telefone" required="">
+                        <span class="focus-border"> <i></i> </span>
+                    </label>
+                    <label class="label">
+                        <select id="curso" name="your-course" class="input-bordas" required="">
+                            <option value="" disabled selected>Selecione uma Capacitação</option>
+                            <option value="Administracao">Administração para o mercado de trabalho</option>
+                            <option value="Ingles">Inglês</option>
+                            <option value="Espanhol">Espanhol</option>
+                            <option value="Libras">Libras</option>
+                            <option value="IA">Inteligência Artificial</option>
+                            <option value="AgenteSaude">Agente comunitário de saúde</option>
+                            <option value="Oratoria">Oratória</option>
+                            <option value="AgentePortaria">Agente de Portaria</option>
+                            <option value="Hotelaria">Hotelaria e turismo</option>
+                            <option value="Investimento">Investimento no mercado financeiro</option>
+                            <option value="Supervisao">Supervisão pedagógica</option>
+                            <option value="AuxiliarCreche">Auxiliar de creche</option>
+                            <option value="Artes">Artes</option>
+                            <option value="Biologia">Biologia</option>
+                            <option value="EducacaoFisica">Educação Física</option>
+                            <option value="Filosofia">Filosofia</option>
+                            <option value="Fisica">Física</option>
+                            <option value="Geografia">Geografia</option>
+                            <option value="Historia">História</option>
+                            <option value="Matematica">Matemática</option>
+                            <option value="MatematicaEnem">Matemática para Enem</option>
+                            <option value="Portugues">Português</option>
+                            <option value="Quimica">Química</option>
+                            <option value="Sociologia">Sociologia</option>
+                            <option value="TecnicasRedacao">Técnicas de Redação</option>
+                        </select>
+                    </label>
+                    <button type="submit" value="Enviar" id="submit" class="button-form borda-inversa" class="btn-enviar"> Enviar</button>
+                </form>
+            </div>
+            <div class="imagem">
+                <img src="../images/banner-prof.png" alt="Imagem ilustrativa">
+            </div>
+        </div>
+    </div> 
+    <script src="../script/Google Sheet.js"></script>
+    <script>
+      document.getElementById("scholarship-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o redirecionamento padrão
+    
+        var form = event.target;
+        var formData = new FormData(form);
+    
+        fetch(form.action, {
+          method: "POST",
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.result === "success") {
+            alert("✅ Parabéns! Em breve, você receberá seu login e senha para iniciar sua capacitação!");
+            form.reset(); // Limpa os campos do formulário após o envio
+          } else {
+            alert("❌ Erro ao enviar: " + data.error);
+          }
+        })
+        .catch(error => {
+          alert("❌ Erro ao enviar: " + error.message);
+        });
+      });
+    </script>
+</body>
+</html>

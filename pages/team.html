@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/events.css">
+    <link rel="stylesheet" href="../styles/max1024px.css">
+    <link rel="stylesheet" href="../styles/max480px.css">
+    <link rel="stylesheet" href="../styles/menu_responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .text {
+            text-align: justify;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .title-text {
+            text-align: center;
+            margin: 25px 0px;
+        }
+
+         .alunos {
+            display: flex;
+            justify-content: center;
+            /* width: 80%; */
+            margin-bottom: 30px;
+         }
+
+         .alunos > img {
+            width: 80%;
+         }
+    </style>
+
+<style>
+    /* Estiliza o item principal do dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Esconde o menu por padrão */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0px;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+/* Estilo dos itens do menu */
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+/* Muda a cor ao passar o mouse */
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #003366;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Exibe o menu quando passa o mouse */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="../images/logo.png" alt="Logo Instituto Ayrton Senna" width="100px"> </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li class="dropdown">
+                    <a href="#">SOBRE NÓS <i class="fas fa-plus" style="color: red;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">QUEM SOMOS</a></li>
+                        <li><a href="about.html">O QUE FAZEMOS</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#">CERTIFICADOS</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="#">PARCEIROS</a></li>
+                <li><a href="#">PARA PROFESSORES</a></li>
+                <li><a href="#" class="btn-doe">QUERO APOIAR</a></li>
+            </ul>
+        </nav>
+        <img class="menu-burguer" src="../images/menu-icon.svg" width="40px">   
+    </header>
+
+    <section class="text">
+        <h1 class="title-text">Transformando Vidas por Meio da Educação e Oportunidades</h1>
+        <p>O Projeto <strong>ACELERA JUVENTUDE</strong> é uma associação civil sem fins lucrativos, que tem por objetivo ampliar as oportunidades de crianças, jovens e adolescentes e suas famílias, que vivem em situação de vulnerabilidade social, por meio da educação, qualificação, cultura e esporte.</p>
+    </section>
+    
+    <figure  class="alunos">
+        <img src="../images/team.jpg" alt="Alunos">
+    </figure>
+    
+</body>
+</html>

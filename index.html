@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Acelera Juventude</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/max1024px.css">
+    <link rel="stylesheet" href="styles/max480px.css">
+    <link rel="stylesheet" href="styles/menu_responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+      /* Estiliza o item principal do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Esconde o menu por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 10px 0px;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+/* Estilo dos itens do menu */
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+/* Muda a cor ao passar o mouse */
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #003366;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Exibe o menu quando passa o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="images/logo.png" alt="Logo Instituto Ayrton Senna" width="130px"> </div>
+        <nav>
+            <ul>
+                <li><a href="#">INÍCIO</a></li>
+                <li class="dropdown">
+                  <a href="#">SOBRE NÓS <i class="fas fa-plus" style="color: red;"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="pages/team.html">QUEM SOMOS</a></li>
+                      <li><a href="pages/about.html">O QUE FAZEMOS</a></li>
+                  </ul>
+                </li>
+                <li><a href="pages/certificate.html">CERTIFICADOS</a></li>
+                <li><a href="#eventos">EVENTOS</a></li>
+                <li><a href="#">PARCEIROS</a></li>
+                <li><a href="pages/teacher.html">PARA PROFESSORES</a></li>
+                <li><a href="#" class="btn-doe">QUERO APOIAR</a></li>
+            </ul>
+        </nav>
+        <img class="menu-burguer" src="images/menu-icon.svg" width="40px">
+
+    </header>
+    <main>
+      <section class="hero">
+          <div class="content">
+              <h1 id="hero-title">ACELERAMOS<br> A QUALIDADE DA<br> EDUCAÇÃO PÚBLICA</h1>
+              <button id="btn-action" class="btn-action">COMEMORE COM A GENTE</button>
+          </div>
+          <button id="changeImageBtn" class="btn-change-image">&#8594;</button>
+      </section>
+  </main>
+  
+
+    <div class="title-events" id="eventos">
+      <h3 class="titulo-pequeno">NOSSOS EVENTOS</h3>
+      <h2 class="titulo-principal">Nossos Próximos Eventos</h2>
+      <i class="fa-solid fa-circle-exclamation fa-2x fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" aria-hidden="true"></i>
+      <p class="descricao">Não hesite, entre em contato conosco para obter mais informações.</p>
+    </div>
+
+    <div class="state">
+      <h3>PERNAMBUCO</h3>
+    </div>
+    
+    <section class="cards-events">
+        <article class="card">
+            <img
+              class="card__background"
+              src="images/casa-amarela.jpg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Casa Amarela</h2>
+                <p class="card__description">
+                    Casa Amarela é um dos bairros mais tradicionais de Recife, conhecido por seu forte comércio 
+                    popular e sua história cultural. Ele abriga o Mercado de Casa Amarela, um ponto de encontro 
+                    para moradores e turistas, repleto de barracas com comidas típicas, artesanato e produtos 
+                    regionais. Além disso, o bairro tem uma rica herança histórica, com casarões antigos e uma 
+                    ligação forte com a cultura popular pernambucana.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/prazeres.jpg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Prazeres</h2>
+                <p class="card__description">
+                  O bairro de Prazeres, em Jaboatão dos Guararapes, é um dos mais importantes e movimentados
+                   da cidade. Conhecido por sua relevância histórica, o bairro abriga o Monte dos Guararapes,
+                    considerado o berço da nacionalidade brasileira por ter sido palco das batalhas decisivas
+                     contra os holandeses no século XVII. Além disso, Prazeres conta com um comércio forte, a
+                      presença do metrô e um grande fluxo de pessoas diariamente. O nome do bairro tem origem
+                       na antiga Igreja de Nossa Senhora dos Prazeres, localizada no monte.
+                </p>
+              </div>
+            </div>
+          </article>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/Serra-Talhada.jpg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Serra Talhada</h2>
+                <p class="card__description">
+                  Serra Talhada, conhecida como a "Capital do Xaxado", é uma cidade do sertão pernambucano
+                   com uma forte ligação cultural e histórica. Foi o berço de Virgulino Ferreira da Silva, o
+                    famoso cangaceiro Lampião, tornando-se um dos principais pontos de referência do cangaço
+                     no Brasil. Além disso, a cidade se destaca pela Festa de Setembro, um dos maiores evento
+                     s religiosos e culturais da região, e pelo seu crescente desenvolvimento econômico. Com
+                      uma paisagem marcada por serras imponentes, como a que dá nome à cidade, Serra Talhada
+                       é um destino de grande importância para a história nordestina.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/petrolina.webp"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Petrolina</h2>
+                <p class="card__description">
+                  Petrolina, localizada no sertão de Pernambuco, é conhecida como a "Terra da Uva e do Vinho"
+                   devido à sua forte produção agrícola irrigada pelo Rio São Francisco. A cidade se destaca
+                    como um dos maiores polos de fruticultura do Brasil, exportando uvas e mangas para diversos países.
+                     Além disso, Petrolina possui um grande potencial turístico, com belas paisagens à beira do Velho
+                      Chico, ilhas fluviais e vinícolas que oferecem experiências enoturísticas. A cidade também tem um
+                       forte crescimento econômico e cultural, sendo um dos principais centros urbanos do interior do Nordeste.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/abreu.jpg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Abreu e Lima</h2>
+                <p class="card__description">
+                  Abreu e Lima, localizada na Região Metropolitana do Recife, é conhecida por seu forte
+                   setor industrial e comercial. A cidade tem uma economia impulsionada pelo Polo Automotivo
+                    de Goiana e outras indústrias próximas. Além disso, possui um grande legado histórico,
+                     carregando o nome do general José Inácio de Abreu e Lima, que lutou ao lado de Simón
+                      Bolívar nas guerras de independência da América do Sul. O município também se destaca
+                       por suas manifestações culturais e religiosas, mantendo viva a tradição nordestina.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/paulista.jpg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Paulista</h2>
+                <p class="card__description">
+                  Paulista, localizada na Região Metropolitana do Recife, é conhecida por suas belas praias,
+                   como Maria Farinha e Conceição, que atraem turistas em busca de lazer e esportes náuticos.
+                    A cidade também se destaca pelo Polo Industrial de Paratibe, um dos mais importantes do 
+                    estado, e pelo seu patrimônio histórico, como o Forte de Pau Amarelo, construído no período
+                     colonial. Com um crescimento acelerado, Paulista é um dos principais polos econômicos e turísticos
+                    de Pernambuco.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/goiana.jpeg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Goiana / PE</h2>
+                <p class="card__description">
+                  Goiana, localizada na Zona da Mata Norte de Pernambuco, é uma cidade histórica e
+                   industrial. Conhecida por seu rico patrimônio colonial, abriga igrejas e casarões que
+                    remontam ao período da ocupação holandesa. A cidade também se destaca pelo Polo Automotivo
+                     de Pernambuco, onde está instalada a fábrica da Jeep, impulsionando a economia local. 
+                     Além disso, Goiana tem forte tradição cultural, com manifestações como os Caboclinhos e
+                      belas praias, como Carne de Vaca e Catuama, que atraem visitantes em busca de tranquilidade e beleza natural.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__background"
+              src="images/ouricuri.webp"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Ouricuri</h2>
+                <p class="card__description">
+                  Ouricuri, localizada no Sertão de Pernambuco, é conhecida como a "Terra dos Voluntários da
+                   Pátria", em referência aos moradores que se alistaram para a Guerra do Paraguai. A cidade
+                    se destaca pela agropecuária, sendo uma grande produtora de milho, feijão e mandioca, 
+                    além da caprinocultura e da produção de mel. Com um forte clima sertanejo, Ouricuri preserva 
+                    tradições culturais e religiosas, como a Festa de São Sebastião, que atrai visitantes de diversas 
+                    regiões. Além disso, a cidade tem crescido economicamente, sendo um dos polos de desenvolvimento do Sertão do Araripe.
+                </p>
+              </div>
+            </div>
+          </article>
+    </section>
+
+    <div class="state">
+      <h3>RIO GRANDE DO NORTE</h3>
+    </div>
+    
+    <section class="cards-events">
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/caico-cidade.jpg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Caicó</h2>
+            <p class="card__description">
+              Caicó, a "Capital do Seridó", é conhecida pela Festa de Sant’Ana, pelo tradicional bordado
+               seridoense e pela culinária típica, com destaque para a carne de sol e o queijo de manteiga.
+                Além de sua forte cultura e religiosidade, a cidade impressiona com suas paisagens áridas e
+                 sua história ligada ao sertão nordestino.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/mossoro.jpeg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Mossoró</h2>
+            <p class="card__description">
+              Mossoró, conhecida como a "Terra da Liberdade", se destaca por ter sido a primeira cidade do
+               Brasil a abolir a escravidão, cinco anos antes da Lei Áurea. Também é famosa por sua resistência 
+               ao bando de Lampião, na chamada "Resistência de Mossoró". A cidade tem uma forte economia baseada 
+               na exploração de petróleo, sal marinho e fruticultura irrigada. Além disso, Mossoró promove um dos 
+               maiores São João do Brasil, atraindo milhares de turistas com sua cultura vibrante.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/natal.webp"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Natal</h2>
+            <p class="card__description">
+              Natal, a "Cidade do Sol", é a capital do Rio Grande do Norte e um dos destinos turísticos mais
+               procurados do Nordeste. Com praias paradisíacas, como Ponta Negra, e o imponente Forte dos Reis Magos,
+                a cidade combina história e belezas naturais. O turismo é um dos pilares da economia, impulsionado
+                 pelo famoso passeio de buggy nas dunas de Genipabu. Além disso, Natal tem um dos melhores climas do mundo,
+                  com sol presente quase o ano todo, tornando-a um destino perfeito para
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="state">
+      <h3>PARAÍBA</h3>
+    </div>
+    
+    <section class="cards-events">
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/patos.jpeg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Patos</h2>
+            <p class="card__description">
+              Patos, conhecida como a "Capital do Sertão Paraibano", é um dos principais centros urbanos do
+               interior da Paraíba. A cidade se destaca pelo seu forte comércio, serviços e pelo tradicional
+                São João de Patos, uma das maiores festas juninas do estado, que atrai milhares de visitantes
+                 todos os anos. Além disso, Patos tem uma economia aquecida pelo setor agropecuário e energético,
+                  com parques de energia solar e eólica. Com um clima quente e uma cultura sertaneja vibrante, a
+                   cidade é um importante polo de desenvolvimento no semiárido nordestino.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/Santa-Rita.jpg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Santa Rita</h2>
+            <p class="card__description">
+              Santa Rita, conhecida como a "Cidade dos Canaviais", é um dos municípios mais importantes
+               da Paraíba, localizado na Região Metropolitana de João Pessoa. A cidade tem uma forte
+                tradição na produção de cana-de-açúcar, que impulsionou seu desenvolvimento econômico ao
+                 longo dos anos. Além disso, Santa Rita se destaca por suas manifestações culturais, como
+                  o carnaval de Tibiri, e por suas belas praias, como a Praia de Forte Velho, um destino
+                   pouco explorado, mas de grande beleza natural. Com um crescimento constante, o município
+                    é um dos mais populosos do estado e tem papel fundamental na economia paraibana.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="state">
+      <h3>CEARÁ</h3>
+    </div>
+
+    <section class="cards-events">
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/JUAZEIRO.jpg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Juazeiro do Norte</h2>
+            <p class="card__description">
+              Juazeiro do Norte, conhecida como a "Terra do Padre Cícero", é um dos maiores centros 
+              religiosos do Brasil, atraindo milhares de romeiros todos os anos. A cidade se destaca pela
+              fé, cultura e economia forte, sendo um dos principais polos comerciais do Ceará. Além do
+                turismo religioso, Juazeiro também cresce no setor educacional e industrial, consolidando-se
+                como um importante centro do Cariri cearense.
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/fortaleza.webp"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Fortaleza</h2>
+            <p class="card__description">
+              Fortaleza, a capital do Ceará, é uma das principais cidades turísticas do Brasil, famosa por
+               suas belas praias como Praia do Futuro e Canoa Quebrada, que atraem turistas de todo o mundo.
+                A cidade combina tradição e modernidade, com pontos turísticos como o Forte de Nossa Senhora
+                 da Assunção, o Centro Dragão do Mar de Arte e Cultura e o Mercado Central, que oferecem um mergulho
+                  na cultura cearense. Fortaleza também se destaca pelo Carnaval, suas festas de rua e uma culinária
+                   rica em frutos do mar, como a famosa carne de sol. A cidade vive um forte crescimento econômico, com
+                    destaque para o setor de serviços e o turismo.
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="state">
+      <h3>BAHIA</h3>
+    </div>
+
+    <section class="cards-events">
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/juazeiro-bahia.jpg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Juazeiro da Bahia</h2>
+            <p class="card__description">
+              Juazeiro, localizada no norte da Bahia, é uma cidade marcada pela forte tradição religiosa e 
+              cultural, sendo o berço de Padre Cícero, uma das figuras mais reverenciadas do Brasil. A 
+              cidade se destaca pela fruticultura, especialmente a produção de mangas e uvas, que impulsionam 
+              sua economia. O rio São Francisco é um dos maiores atrativos naturais, proporcionando belas 
+              paisagens e atividades turísticas. Além disso, Juazeiro realiza a Festa de Padre Cícero, que atrai
+               milhares de devotos e turistas todos os anos. A cidade também se caracteriza por seu ambiente 
+               acolhedor e sua rica gastronomia, com pratos típicos da culinária nordestina.
+          </div>
+        </div>
+      </article>
+    </section>
+
+    
+
+
+
+
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/ec4f2758d3.js" crossorigin="anonymous"></script>
+    <script>
+      document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        card.classList.toggle('activated'); // Alterna a classe 'activated' ao clicar
+    });
+});
+</script>
+
+<script src="script/slide.js"></script>
+
+</body>
+</html>

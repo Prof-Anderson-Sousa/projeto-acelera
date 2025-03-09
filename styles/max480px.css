@@ -1,0 +1,55 @@
+/* Esconder Menor Burguer */
+@media (min-width: 1080px) {
+	.menu-burguer {
+        display: none;
+    }
+}
+
+/* Smartphones médios (361px a 480px) */
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    nav ul li a {
+        display: none;
+    }
+
+    .hero {
+        background: linear-gradient(to right, rgba(0, 31, 76, 0.8), rgba(0, 86, 166, 0.6) 30%, rgba(0, 86, 166, 0) 100%),
+                    url('../images/capa.jpg');
+    }
+
+    .card {
+        width: 360px;
+        height: 285px;
+      }
+
+      .card__description {
+        font-size: 11px;
+      }
+
+      .card__content {
+        color: #fff;
+        --flow-space: 0.9375rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-end;
+        height: 80px;
+        padding: 12% 1.25rem 1.875rem;
+        background: linear-gradient(
+          180deg,
+          hsla(0, 0%, 0%, 0) 0%,
+          hsla(0, 0%, 0%, 0.3) 10%,
+          hsl(0, 0%, 0%) 100%
+        );
+      }
+
+      .state > h3 {
+        font-size: 1.9rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 10px;
+      }
+
+      .descricao {
+        text-align: center;
+      }
+  }
