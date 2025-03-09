@@ -58,14 +58,14 @@ sublista.appendChild(subItem2);
 let containerLogo = document.createElement("figure");
 let imgLogo = document.createElement("img");
 imgLogo.classList.add("logo-neo");
-imgLogo.setAttribute("src", "./images/logo.png");
+imgLogo.setAttribute("src", "../images/logo.png");
 containerLogo.appendChild(imgLogo);
 
 /* Selecionando Botão de Fechar Menu */
 let buttonClose = document.createElement("div");
 buttonClose.classList.add("buttonClose");
 let imgClose = document.createElement("img");
-imgClose.setAttribute("src", "./images/close_menu.svg");
+imgClose.setAttribute("src", "../images/close_menu.svg");
 imgClose.classList.add("imgClose");
 buttonClose.appendChild(imgClose);
 
