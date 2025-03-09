@@ -33,7 +33,7 @@ sublista.style.borderRadius = "5px";
 sublista.style.marginTop = "5px";
 
 let subItem1 = document.createElement("a");
-subItem1.setAttribute("href", "../pages/team.html");
+subItem1.setAttribute("href", "./pages/team.html");
 subItem1.innerHTML = "QUEM SOMOS";
 subItem1.style.display = "block";
 // subItem1.style.padding = "10px";
@@ -42,7 +42,7 @@ subItem1.style.backgroundColor = "#e0e0e0";
 // subItem1.style.borderRadius = "5px";
 
 let subItem2 = document.createElement("a");
-subItem2.setAttribute("href", "../pages/about.html");
+subItem2.setAttribute("href", "./pages/about.html");
 subItem2.innerHTML = "O QUE FAZEMOS";
 subItem2.style.display = "block";
 // subItem2.style.padding = "8px";
