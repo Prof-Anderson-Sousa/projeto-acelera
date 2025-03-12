@@ -4,13 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Acelera Juventude</title>
+    <link rel="stylesheet" href="styles/max375px.css">
+    <link rel="stylesheet" href="styles/max480px.css">
+    <link rel="stylesheet" href="styles/max1024px.css">
+    <link rel="stylesheet" href="styles/menu_responsive.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/events.css">
-    <link rel="stylesheet" href="styles/max375px.css">
-    <link rel="stylesheet" href="styles/max1024px.css">
-    <link rel="stylesheet" href="styles/max480px.css">
-    <link rel="stylesheet" href="styles/menu_responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+.subtitle-course {
+    margin: 25px 0px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+}
+
+#random, #random1, #random2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+    
+}
+
+#resultados {
+    display: flex
+;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+    gap: 40px;
+}
+
+      .cardResult {
+        border-radius: 0px 20px 0px 20px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #008CFF, #005F99);
+    width: 380px;
+    height: 200px;
+}
+
+.cardResult {
+    width: 360px;
+    height: 200px;
+    background: linear-gradient(135deg, #008CFF, #005F99); /* Degradê azul */
+    color: white; /* Texto e ícones brancos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0px 20px 0px 20px;
+    position: relative;
+}
+
+/* Linha lateral direita */
+.cardResult::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    bottom: 0px;
+    width: 5px;
+    height: 100px; /* Ajuste conforme necessário */
+    background: yellow; /* Cor da borda */
+}
+
+/* Linha inferior */
+.cardResult::before {
+    content: "";
+    position: absolute;
+    right: -3px;
+    bottom: -2px;
+    width: 100px;
+    height: 5px;
+    background: yellow; /* Cor da borda */
+}
+
+    </style>
 
     <style>
       /* Estiliza o item principal do dropdown */
@@ -88,6 +166,23 @@
           <button id="changeImageBtn" class="btn-change-image">&#8594;</button>
       </section>
   </main>
+
+  <h1 class="subtitle subtitle-course">NOSSOS NÚMEROS EM 2024</h1>
+    
+    <section id="resultados">
+        <div class="cardResult">
+            <img src="images/certificado.png"  alt="">
+            <div id="random">"</div>
+        </div>
+        <div class="cardResult">
+            <img src="images/escola.png" alt="">
+            <div id="random1">"</div>
+        </div>
+        <div class="cardResult">
+            <img src="images/cidades.png"  alt="">
+            <div id="random2">"</div>
+        </div>
+    </section>
   
 
     <div class="title-events" id="eventos">
@@ -496,6 +591,40 @@
 </script>
 
 <script src="script/slide.js"></script>
+
+<script>
+  let count = 0;
+  let count1 = 0;
+  let count2 = 0;
+  const random = document.querySelector("#random");
+  const random1 = document.querySelector("#random1");
+  const random2 = document.querySelector("#random2");
+
+  const intervalId = setInterval(() => {
+      count++;
+      random.innerText = Math.floor(Math.random() * 15087);
+      if (count === 20) {
+          clearInterval(intervalId);
+          random.innerText = "+ " + 200+"."+"000" + " Jovens Consquisataram o Certificado"
+      }
+  }, 150);
+  const intervalId1 = setInterval(() => {
+      count1++;
+      random1.innerText = Math.floor(Math.random() * 600);
+      if (count1 === 20) {
+          clearInterval(intervalId1);
+          random1.innerText = "+ " + 1+"."+"200" + " Escolas Apoiaram o Projeto"
+      }
+  }, 180);
+  const intervalId2 = setInterval(() => {
+      count2++;
+      random2.innerText = Math.floor(Math.random() * 100);
+      if (count2 === 20) {
+          clearInterval(intervalId2);
+          random2.innerText = "+ " + 1+"30" + " Cidades Participantes"
+      }
+  }, 205);
+</script>
 
 </body>
 </html>
