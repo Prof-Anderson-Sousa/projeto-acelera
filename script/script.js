@@ -21,7 +21,7 @@ item5.setAttribute("href", "./pages/partners.html");
 let item6 = document.createElement("a");
 item6.setAttribute("href", "./pages/teacher.html");
 let item7 = document.createElement("a");
-item7.setAttribute("href", "https://api.whatsapp.com/send/?phone=5581996276609&text=Ol%C3%A1%2C+Desejo+me+Matricular%21&type=phone_number&app_absent=0");
+item7.setAttribute("href", "./pages/help.html");
 
 /* Criando Sublista */
 let sublista = document.createElement("ul");
@@ -71,7 +71,7 @@ buttonClose.appendChild(imgClose);
 
 /* Adicionando Nome aos Itens da Lista */
 item1.innerHTML = "INÍCIO";
-item2.innerHTML = "SOBRE NÓS +";
+item2.innerHTML = "SOBRE NÓS " + '<i class="fas fa-plus" style="color: red;"></i>';
 item3.innerHTML = "CERTIFICADOS";
 item4.innerHTML = "EVENTOS";
 item5.innerHTML = "PARCEIROS";
