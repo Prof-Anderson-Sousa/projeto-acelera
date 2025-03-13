@@ -4,91 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Acelera Juventude</title>
-    <link rel="stylesheet" href="styles/max375px.css">
-    <link rel="stylesheet" href="styles/max480px.css">
-    <link rel="stylesheet" href="styles/max1024px.css">
-    <link rel="stylesheet" href="styles/menu_responsive.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/max375px.css">
+    <link rel="stylesheet" href="styles/max1024px.css">
+    <link rel="stylesheet" href="styles/max480px.css">
+    <link rel="stylesheet" href="styles/menu_responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <style>
-
-.subtitle-course {
-    margin: 25px 0px;
-}
-
-.subtitle {
-    font-size: 2rem;
-    text-align: center;
-    color: #000;
-}
-
-#random, #random1, #random2 {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #ffffff;
-    
-}
-
-#resultados {
-    display: flex
-;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 60px;
-    gap: 40px;
-}
-
-      .cardResult {
-        border-radius: 0px 20px 0px 20px;
-    display: flex
-;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #008CFF, #005F99);
-    width: 380px;
-    height: 200px;
-}
-
-.cardResult {
-    width: 360px;
-    height: 200px;
-    background: linear-gradient(135deg, #008CFF, #005F99); /* Degradê azul */
-    color: white; /* Texto e ícones brancos */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 0px 20px 0px 20px;
-    position: relative;
-}
-
-/* Linha lateral direita */
-.cardResult::after {
-    content: "";
-    position: absolute;
-    right: -3px;
-    bottom: 0px;
-    width: 5px;
-    height: 100px; /* Ajuste conforme necessário */
-    background: yellow; /* Cor da borda */
-}
-
-/* Linha inferior */
-.cardResult::before {
-    content: "";
-    position: absolute;
-    right: -3px;
-    bottom: -2px;
-    width: 100px;
-    height: 5px;
-    background: yellow; /* Cor da borda */
-}
-
-    </style>
 
     <style>
       /* Estiliza o item principal do dropdown */
@@ -133,6 +55,84 @@
     display: block;
 }
     </style>
+
+<style>
+
+  .subtitle-course {
+      margin: 25px 0px;
+  }
+  
+  .subtitle {
+      font-size: 2rem;
+      text-align: center;
+      color: #000;
+  }
+  
+  #random, #random1, #random2 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ffffff;
+      
+  }
+  
+  #resultados {
+      display: flex
+  ;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 60px;
+      gap: 40px;
+  }
+  
+        .cardResult {
+          border-radius: 0px 20px 0px 20px;
+      display: flex
+  ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #008CFF, #005F99);
+      width: 380px;
+      height: 200px;
+  }
+  
+  .cardResult {
+      width: 360px;
+      height: 200px;
+      background: linear-gradient(135deg, #008CFF, #005F99); /* Degradê azul */
+      color: white; /* Texto e ícones brancos */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 0px 20px 0px 20px;
+      position: relative;
+  }
+  
+  /* Linha lateral direita */
+  .cardResult::after {
+      content: "";
+      position: absolute;
+      right: -3px;
+      bottom: 0px;
+      width: 5px;
+      height: 100px; /* Ajuste conforme necessário */
+      background: yellow; /* Cor da borda */
+  }
+  
+  /* Linha inferior */
+  .cardResult::before {
+      content: "";
+      position: absolute;
+      right: -3px;
+      bottom: -2px;
+      width: 100px;
+      height: 5px;
+      background: yellow; /* Cor da borda */
+  }
+  
+      </style>
 </head>
 <body>
     <header>
@@ -151,7 +151,7 @@
                 <li><a href="#eventos">EVENTOS</a></li>
                 <li><a href="pages/partners.html">PARCEIROS</a></li>
                 <li><a href="pages/teacher.html">PARA PROFESSORES</a></li>
-                <li><a href="#" class="btn-doe">QUERO APOIAR</a></li>
+                <li><a href="pages/help.html" class="btn-doe">QUERO APOIAR</a></li>
             </ul>
         </nav>
         <img class="menu-burguer" src="images/menu-icon.svg" width="40px">
@@ -169,21 +169,20 @@
 
   <h1 class="subtitle subtitle-course">NOSSOS NÚMEROS EM 2024</h1>
     
-    <section id="resultados">
-        <div class="cardResult">
-            <img src="images/certificado.png"  alt="">
-            <div id="random">"</div>
-        </div>
-        <div class="cardResult">
-            <img src="images/escola.png" alt="">
-            <div id="random1">"</div>
-        </div>
-        <div class="cardResult">
-            <img src="images/cidades.png"  alt="">
-            <div id="random2">"</div>
-        </div>
-    </section>
-  
+  <section id="resultados">
+      <div class="cardResult">
+          <img src="images/certificado.png"  alt="">
+          <div id="random">"</div>
+      </div>
+      <div class="cardResult">
+          <img src="images/escola.png" alt="">
+          <div id="random1">"</div>
+      </div>
+      <div class="cardResult">
+          <img src="images/cidades.png"  alt="">
+          <div id="random2">"</div>
+      </div>
+  </section>
 
     <div class="title-events" id="eventos">
       <h3 class="titulo-pequeno">NOSSOS EVENTOS</h3>
@@ -590,8 +589,6 @@
 });
 </script>
 
-<script src="script/slide.js"></script>
-
 <script>
   let count = 0;
   let count1 = 0;
@@ -625,6 +622,8 @@
       }
   }, 205);
 </script>
+
+<script src="script/slide.js"></script>
 
 </body>
 </html>
