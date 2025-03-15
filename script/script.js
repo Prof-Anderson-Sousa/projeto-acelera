@@ -15,7 +15,7 @@ item2.classList.add("submenu-toggle");
 let item3 = document.createElement("a");
 item3.setAttribute("href", "./pages/certificate.html");
 let item4 = document.createElement("a");
-item4.setAttribute("href", "./assets/pages/unidades.html");
+item4.setAttribute("href", "index.html#eventos");
 let item5 = document.createElement("a");
 item5.setAttribute("href", "./pages/partners.html");
 let item6 = document.createElement("a");
@@ -108,4 +108,8 @@ function removerMenu() {
 item2.addEventListener('click', function (event) {
     event.preventDefault(); // Impede a navegação
     sublista.style.display = sublista.style.display === "none" ? "block" : "none";
+});
+
+item4.addEventListener('click', function() {
+    removerMenu(); // Chama a função que remove o menu
 });

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Acelera Juventude</title>
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/events.css">
     <link rel="stylesheet" href="styles/max375px.css">
@@ -11,55 +13,24 @@
     <link rel="stylesheet" href="styles/max480px.css">
     <link rel="stylesheet" href="styles/menu_responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
     <style>
-      /* Estiliza o item principal do dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
+
+.right, .rwb-tooltip {
+  z-index: 999;
 }
 
-/* Esconde o menu por padrão */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    list-style: none;
-    padding: 10px 0px;
-    margin: 0;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    border-radius: 5px;
+.rwb-tooltip {
+  background-color: #ffffff;
 }
 
-/* Estilo dos itens do menu */
-.dropdown-menu li {
-    padding: 10px 15px;
-}
-
-/* Muda a cor ao passar o mouse */
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #003366;
-    display: block;
-}
-
-.dropdown-menu li:hover {
-    background-color: #f1f1f1;
-}
-
-/* Exibe o menu quando passa o mouse */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
     </style>
 
 <style>
 
   .subtitle-course {
       margin: 25px 0px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   }
   
   .subtitle {
@@ -131,7 +102,6 @@
       height: 5px;
       background: yellow; /* Cor da borda */
   }
-  
       </style>
 </head>
 <body>
@@ -574,8 +544,38 @@
       </article>
     </section>
 
-    
+<a id="robbu-whatsapp-button" class="right" target="_blank" href="https://api.whatsapp.com/send?phone=5581987630519&text=Ol%C3%A1,%20gostaria%20de%20saber%20sobre...">
+  <div class="rwb-tooltip">🚀 Estamos online no Whatsapp!</div>
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>
 
+<footer>
+  <p class="text-footer">&copy; Copyright All rights reserved - by HK Sistemas</p>
+</footer>
+
+<script>
+  function simulateHover() {
+    const button = document.getElementById('robbu-whatsapp-button');
+    const tooltip = button.querySelector('.rwb-tooltip');
+
+    // Adiciona a classe de hover
+    button.classList.add('hover');
+    tooltip.style.opacity = '1';
+    tooltip.style.transform = 'translateX(0)';
+
+    // A seta será visível enquanto o tooltip estiver visível
+
+    // Remove a classe de hover após o efeito
+    setTimeout(() => {
+      button.classList.remove('hover');
+      tooltip.style.opacity = '0';
+      tooltip.style.transform = 'translateX(10%)';
+    }, 3000); // Tempo do efeito
+  }
+
+  // Simula o hover a cada 5 segundos
+  setInterval(simulateHover, 10000);
+</script>
 
 
 

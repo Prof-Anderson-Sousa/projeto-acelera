@@ -15,7 +15,7 @@ item2.classList.add("submenu-toggle");
 let item3 = document.createElement("a");
 item3.setAttribute("href", "./certificate.html");
 let item4 = document.createElement("a");
-item4.setAttribute("href", "./assets/pages/unidades.html");
+item4.setAttribute("href", "../index.html#eventos");
 let item5 = document.createElement("a");
 item5.setAttribute("href", "./partners.html");
 let item6 = document.createElement("a");

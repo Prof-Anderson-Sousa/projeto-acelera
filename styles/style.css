@@ -7,9 +7,23 @@
     font-family: Arial, sans-serif;
     font-family: "Montserrat", sans-serif;
 }
+
 body {
-    background-color: #f4f4f4;
-}
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: repeating-linear-gradient(
+      -45deg,        /* Ângulo das listras */
+      #008CFF,       /* Azul */
+      #008CFF 400px, /* Largura da faixa azul */
+      #FF6347 400px, /* Vermelho começa a 400px */
+      #FF6347 800px, /* Largura da faixa vermelha */
+      #FFD700 800px, /* Amarelo começa a 800px */
+      #FFD700 1200px /* Largura da faixa amarela */
+    );
+    z-index: -1;
+  }
+
 h1, h2, p, a, button, em, strong {
     font-family: "Montserrat", sans-serif;
 }
