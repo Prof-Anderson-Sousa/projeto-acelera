@@ -10,4 +10,8 @@
     nav {
         display: none;
     }
+
+    .logo img {
+        width: 100px;
+}
 }
