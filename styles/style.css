@@ -8,30 +8,27 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* body { 
-    width: 100%;
-    height: 100%;
-    background: rgb(2,0,36);
-background: rgb(65.9%, 80%, 94.1%);
-} */
-  
-
 h1, h2, p, a, button, em, strong {
     font-family: "Montserrat", sans-serif;
 }
+
+body {
+    background-color: #F5F5F5;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 15px;
+    padding: 0 15px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: 999;
     position: relative;
 }
 .logo img {
-    height: 50px;
+    width: 170px;
 }
 nav ul {
     list-style: none;
