@@ -102,6 +102,51 @@
   }
       </style>
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  
+  .oportunidades {
+      max-width: 80%;
+      display: flex;
+      align-items: center;
+      margin: 50px auto;
+      padding: 30px 0;
+  }
+  #oportunidade-color {
+    background-color: yellow;
+  }
+  .text {
+      flex: 1;
+      text-align: left;
+      padding-right: 20px;
+  }
+  .image {
+      flex: 1;
+      text-align: right;
+  }
+  .image img {
+      max-width: 350px;
+      height: auto;
+  }
+  @media (max-width: 768px) {
+      .oportunidades {
+          flex-direction: column;
+          text-align: center;
+      }
+      .text {
+          padding-right: 0;
+      }
+      .image {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+  }
+
+  .titulo-principal {
+    text-align: center;
+  }
+</style>
+
 </head>
 <body>
     <header>
@@ -136,8 +181,6 @@
       </section>
   </main>
 
-
-
   <h1 class="subtitle subtitle-course">NOSSOS NÚMEROS EM 2024</h1>
     
   <section id="resultados">
@@ -153,6 +196,21 @@
           <img src="images/cidades.png"  alt="">
           <div id="random2">"</div>
       </div>
+  </section>
+
+  <section id="oportunidade-color">
+    <div class="oportunidades">
+      <div class="text">
+          <h1 class="titulo-principal">LEI SOBRE OPORTUNIDADES</h1><br>
+          <p>A <strong>Lei 10.097/2000</strong> afirma que empresas de médio e grande porte devem contratar jovens com idade entre 14 e 24 anos como aprendizes.</p><br>
+          <p>O contrato de trabalho pode durar até dois anos e, durante esse período, o jovem é capacitado na instituição formadora e na empresa, combinando formação teórica e prática.</p><br>
+          <p>Os jovens têm a oportunidade de inclusão social com o primeiro emprego e de desenvolver competências para o mundo do trabalho, enquanto os empresários têm a oportunidade de contribuir para a formação dos futuros profissionais do país, difundindo os valores e cultura de sua empresa.</p>
+      </div>
+      <br>
+      <div class="image">
+          <img src="images/pc.png" alt="Imagem representativa da Lei 10.097/2000">
+      </div>
+    </div>
   </section>
 
     <div class="title-events" id="eventos">
