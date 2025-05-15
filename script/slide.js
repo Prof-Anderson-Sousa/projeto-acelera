@@ -3,21 +3,25 @@ const imagens = [
         url: "./images/capa1.jpg", 
         titulo: "ACELERAMOS A QUALIDADE DA EDUCAÇÃO PÚBLICA", 
         botao: "COMEMORE COM A GENTE",
+        link: "./pages/certificate.html",
         posicao: "center center"
     },
     { 
         url: "./images/capa2.jpg", 
         titulo: "O FUTURO COMEÇA AGORA: VOLTA ÀS AULAS 2025!", 
         botao: "SAIBA MAIS",
+        link: "./pages/about.html",
         posicao: "center center"
     },
     { 
         url: "./images/capa.jpg", 
         titulo: "SEJA UM PARTICIPANTE DO NOSSO PROJETO", 
         botao: "APOIE ESSA CAUSA",
+        link: "./pages/help.html",
         posicao: "center center"
     },
 ];
+
 
 let indiceAtual = 0;
 
@@ -29,11 +33,12 @@ function trocarImagem() {
         url('${imagens[indiceAtual].url}') no-repeat center center`;
     document.querySelector('.hero').style.backgroundSize = "cover";
     document.querySelector('.hero').style.backgroundPosition = imagens[indiceAtual].posicao;
+    
 
     // Atualiza os textos
     document.querySelector('.hero h1').innerHTML = imagens[indiceAtual].titulo;
     document.querySelector('.btn-action').innerHTML = imagens[indiceAtual].botao;
-
+    document.querySelector('.btn-action').setAttribute('href', imagens[indiceAtual].link);
     // Avança o índice para a próxima troca
     indiceAtual = (indiceAtual + 1) % imagens.length;
 }

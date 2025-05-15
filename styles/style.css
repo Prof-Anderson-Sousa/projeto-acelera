@@ -94,7 +94,7 @@ section {
 
 .hero h1 {
     font-size: 2.5em;
-    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .btn-action {
@@ -107,6 +107,7 @@ section {
     cursor: pointer;
     border: solid 2px transparent;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .btn-action:hover {
