@@ -46,17 +46,17 @@
         /* align-items: center; */
     }
 
-    .grid-container {
-        display: grid;
-        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-        grid-template-columns: repeat(4, 1fr); /* Sempre 4 colunas */
-        gap: 10px;
-        padding: 20px;
-        max-width: 900px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
+.grid-container {
+    display: flex;          /* Mude de 'grid' para 'flex' */
+    flex-wrap: wrap;        /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;/* <<< A MÁGICA ACONTECE AQUI */
+    gap: 10px;
+    padding: 20px;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 
     .grid-item {
         width: 180px;
@@ -240,7 +240,7 @@
       <div class="grid-container">
           <div class="grid-item"><img src="../images/1.jpg" alt="Imagem 1"></div>
           <div class="grid-item"><img src="../images/2.jpg" alt="Imagem 2"></div>
-          <div class="grid-item"><img src="../images/3.webp" alt="Imagem 3"></div>
+          <!-- <div class="grid-item"><img src="../images/3.webp" alt="Imagem 3"></div> -->
           <div class="grid-item"><img src="../images/4.jpg" alt="Imagem 4"></div>
           <div class="grid-item"><img src="../images/5.jpg" alt="Imagem 5"></div>
           <div class="grid-item"><img src="../images/6.jpg" alt="Imagem 6"></div>
