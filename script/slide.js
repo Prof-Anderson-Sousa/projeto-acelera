@@ -8,7 +8,7 @@ const imagens = [
     },
     { 
         url: "./images/capa2.jpg", 
-        titulo: "O FUTURO COMEÇA AGORA: VOLTA ÀS AULAS 2025!", 
+        titulo: "O FUTURO COMEÇA AGORA: VOLTA ÀS AULAS 2026!", 
         botao: "SAIBA MAIS",
         link: "./pages/about.html",
         posicao: "center center"

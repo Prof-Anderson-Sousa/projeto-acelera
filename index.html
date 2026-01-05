@@ -42,9 +42,16 @@
   #random, #random1, #random2 {
       margin-top: 20px;
       text-align: center;
+      font-size: 1.5rem;
+      color: #ffffff;
+      font-weight: 500;
+  }
+
+  #p {
+      margin:  10px 0 10px 0;
+      text-align: center;
       font-size: 0.9rem;
       color: #ffffff;
-      
   }
   
   #resultados {
@@ -182,20 +189,23 @@
       </section>
   </main>
 
-  <h1 class="subtitle subtitle-course">NOSSOS NÚMEROS EM 2024</h1>
+  <h1 class="subtitle subtitle-course">NOSSOS NÚMEROS EM 2025</h1>
     
   <section id="resultados">
       <div class="cardResult">
           <img src="images/certificado.png"  alt="">
-          <div id="random">"</div>
+          <div id="random"></div>
+          <div id="p">Jovens Consquisataram o Certificado</div>
       </div>
       <div class="cardResult">
           <img src="images/escola.png" alt="">
-          <div id="random1">"</div>
+          <div id="random1"></div>
+          <div id="p">Escolas Apoiaram o Projeto</div>
       </div>
       <div class="cardResult">
           <img src="images/cidades.png"  alt="">
-          <div id="random2">"</div>
+          <div id="random2"></div>
+          <div id="p">Cidades Apoiaram o Projeto</div>
       </div>
   </section>
 
@@ -606,7 +616,7 @@
       </article>
     </section>
 
-<a id="robbu-whatsapp-button" class="right" target="_blank" href="https://api.whatsapp.com/send?phone=5581987630519&text=Ol%C3%A1,%20gostaria%20de%20saber%20sobre...">
+<a id="robbu-whatsapp-button" class="right" target="_blank" href="https://api.whatsapp.com/send?phone=558196276609&text=Ol%C3%A1,%20gostaria%20de%20saber%20sobre...">
   <div class="rwb-tooltip">🚀 Estamos online no Whatsapp!</div>
   <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
 </a>
@@ -652,37 +662,58 @@
 </script>
 
 <script>
-  let count = 0;
-  let count1 = 0;
-  let count2 = 0;
-  const random = document.querySelector("#random");
-  const random1 = document.querySelector("#random1");
-  const random2 = document.querySelector("#random2");
+  function contadorProgressivoPoucasTrocas({
+    elemento,
+    valorFinal,
+    duracao = 1200,   // tempo total (ms)
+    passos = 10,      // bem poucas trocas
+    prefixo = "+ ",
+    easing = true     // true = desacelera no final
+  }) {
+    const el = document.querySelector(elemento);
+    let passoAtual = 0;
 
-  const intervalId = setInterval(() => {
-      count++;
-      random.innerText = Math.floor(Math.random() * 15087);
-      if (count === 20) {
-          clearInterval(intervalId);
-          random.innerText = "+ " + 200+"."+"000" + " Jovens Consquisataram o Certificado"
+    // easing (easeOutCubic): começa mais rápido e desacelera no final
+    const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+    const intervalo = duracao / passos;
+
+    const timer = setInterval(() => {
+      passoAtual++;
+      const t = passoAtual / passos;            // 0..1
+      const progresso = easing ? easeOutCubic(t) : t;
+      const valor = Math.round(valorFinal * progresso);
+
+      el.innerText = prefixo + valor.toLocaleString("pt-BR");
+
+      if (passoAtual >= passos) {
+        clearInterval(timer);
+        el.innerText = prefixo + valorFinal.toLocaleString("pt-BR");
       }
-  }, 150);
-  const intervalId1 = setInterval(() => {
-      count1++;
-      random1.innerText = Math.floor(Math.random() * 600);
-      if (count1 === 20) {
-          clearInterval(intervalId1);
-          random1.innerText = "+ " + 1+"."+"200" + " Escolas Apoiaram o Projeto"
-      }
-  }, 180);
-  const intervalId2 = setInterval(() => {
-      count2++;
-      random2.innerText = Math.floor(Math.random() * 100);
-      if (count2 === 20) {
-          clearInterval(intervalId2);
-          random2.innerText = "+ " + 1+"30" + " Cidades Participantes"
-      }
-  }, 205);
+    }, intervalo);
+  }
+
+  // Ajuste os passos: 6, 8, 10... quanto menor, menos trocas.
+  contadorProgressivoPoucasTrocas({
+    elemento: "#random",
+    valorFinal: 200000,
+    duracao: 1400,
+    passos: 8
+  });
+
+  contadorProgressivoPoucasTrocas({
+    elemento: "#random1",
+    valorFinal: 1200,
+    duracao: 1400,
+    passos: 7
+  });
+
+  contadorProgressivoPoucasTrocas({
+    elemento: "#random2",
+    valorFinal: 130,
+    duracao: 1400,
+    passos: 6
+  });
 </script>
 
 <script src="script/slide.js"></script>
